@@ -1,0 +1,15 @@
+body{
+  background-color: black;
+}
+
+h1{
+  color: pink;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(15, 203, 250);
+  font-size: 14pt;
+}
