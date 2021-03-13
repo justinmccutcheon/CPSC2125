@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>CPSC 2125 Lab 5</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <img src="images/reddragon.png">
+    <h1>CPSC 2125 Lab 5</h1></header>
+  <aside class="sidebar">
+    <nav>
+    <ul style="list-style-type:none;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lab1.html">Lab 1</a></li>
+      <li><a href="lab2.html">Lab 2</a></li>
+      <li><a href="lab3.html">Lab 3</a></li>
+      <li><a href="lab4.html">Lab 4</a></li>
+      <li><a href="lab5.html">Lab 5</a></li>
+    </ul>
+    </nav>
+    </aside>
+    <article class="content">
+    <section class="left">
+     <form>
+       <form>
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name"email"><br>
+      
+      <label for="state">State:</label><br>
+      <select id="state">
+        <option>AL</option>
+        <option>FL</option>
+        <option>GA</option>
+      </select><br>
+      
+      <label for="marital">Marital Status:</label><br>
+      <input type="radio" id="single" name="marital" value="single">
+      <label for="single">Single</label><br>
+      <input type="radio" id="married" name="marital" value="married">
+      <label for="married">Married</label><br>
+      
+      <label for="skill">What skills do you know?</label><br>
+      <input type="checkbox" id="skill1" name="skill1" value="Python">
+      <label for="skill1"> I know Python!</label><br>
+      <input type="checkbox" id="skill2" name="skill2" value="Java">
+      <label for="skill2"> I know Java!</label><br>
+      <input type="checkbox" id="skill3" name="skill3" value="C">
+      <label for="skill3"> I know C!</label><br>
+
+      <label for="comments">Do you have any comments?</label><br>
+      <textarea id="comments" name="comments" rows="4" cols="25"></textarea><br>
+      <input type="submit" value="Submit">
+     </form>
+    
+    </section>
+    </article>
+    <footer class="footer">
+      <p>justin@throwaway.com<br>
+      <script type="text/javascript">document.writeln("This page was last updated"+document.lastModified);</script></p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+  </div>
+</html>
