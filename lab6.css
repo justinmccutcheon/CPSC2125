@@ -1,0 +1,158 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: 'Open Sans', 'sans-serif';
+  background-color: black;
+}
+
+h1{
+  margin: 0 0 1em 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:lightslategray;
+  color: black;
+  border: 2px solid black;
+  margin: 1%;
+  height: auto;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 12pt;
+  width:100%;
+
+}
+
+li{
+  display: inline;
+}
+
+a:link {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(248, 120, 0);
+  text-decoration: none;
+}
+
+a:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 119, 128);
+  text-decoration: none;
+}
+
+a:hover { 
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lavender;
+  text-decoration: none; 
+}
+
+
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+
+.p1{
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+  font-size: 12pt;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+
+
+/* make a grid */
+.wrapper {
+  max-width: 100%;
+  min-height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-gap: 0px;
+  grid-template-rows: repeat()
+}
+
+.wrapper > * {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+.left {
+  background-color: lightblue;
+  color: black;
+  float: left;
+  grid-column: 1;
+  grid-row: 3 / 4; 
+}
+
+.left2 {
+  background-color: navy;
+  color:blanchedalmond;
+  float: left;
+  grid-column: 1;
+  grid-row: 5 / 6;
+}
+
+.content {
+  color: pink;
+  float: right;
+  grid-column: 2 / -1;
+  grid-row: 3 / 6;
+}
+
+.header {
+  background-color: purple;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+.nav {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+
+.footer {
+  background-color: orangered;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
+
